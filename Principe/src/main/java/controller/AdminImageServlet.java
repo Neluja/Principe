@@ -18,6 +18,8 @@ public class AdminImageServlet extends HttpServlet {
 
         if (image != null) {
             response.setContentType("image/jpeg");
+
+            
             response.getOutputStream().write(image);
         }
     }
